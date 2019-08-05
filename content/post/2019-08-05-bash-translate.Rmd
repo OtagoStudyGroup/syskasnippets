@@ -26,12 +26,12 @@ head -n 1 file.tsv | tr "\t" "\n" | wc -l
 ```
 
 Or if you want to remove whitespace padding from a fixed width output:
-```{bash}
+```{bash, eval = FALSE}
 echo 'some      fixed   width   text' | tr -s ' ' 
 ```
 
 One super useful feature for the genetically inclined is mapping characters to be changed, for instance creating the complement for strand of DNA:
-```{bash}
+```{bash, eval = FALSE}
 echo ACGTGGTAACT | tr ACGT TGCA
 ```
 
