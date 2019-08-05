@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bash on Otago Study Group SYSKA</title>
+    <link>/syskasnippets/tags/bash/</link>
+    <description>Recent content in bash on Otago Study Group SYSKA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Aug 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/syskasnippets/tags/bash/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>bash translate</title>
+      <link>/syskasnippets/2019/08/bash-translate/</link>
+      <pubDate>Mon, 05 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/syskasnippets/2019/08/bash-translate/</guid>
+      <description>tr or “translate or delete characters” is a super useful program on the command line.
+My most common usage is to convert delimiters in files, such as tab separated to comma separated:
+tr &amp;quot;\t&amp;quot; &amp;quot;,&amp;quot; &amp;lt; tab_separated_file.tsv or to work out how many columns I have by taking the first line of a file and converting the delimiters to new lines and then counting the number of lines:
+echo -e &amp;quot;col1\tcol2\tcol3&amp;quot; &amp;gt; file.</description>
+    </item>
+    
+    <item>
+      <title>Case-insensitive Completion in Bash</title>
+      <link>/syskasnippets/2019/05/case-insensitive-completion-in-bash/</link>
+      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/syskasnippets/2019/05/case-insensitive-completion-in-bash/</guid>
+      <description>Have you ever been annoyed by having to re-type a file you are looking for, just because the filename contains capital letter(s)?
+Tab-completion can get you closer to the correct filename without knowing what the actual filename is, but it’s not quite smart enough to account for uppercase and lowercase letters (i.e. it’s case-sensitive).
+For example, if you type coolfile and hit tab to complete the filename coolFile.txt, tab-completion won’t work.</description>
+    </item>
+    
+    <item>
+      <title>Using `less` more effectively</title>
+      <link>/syskasnippets/2019/05/using-less-more-effectively/</link>
+      <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/syskasnippets/2019/05/using-less-more-effectively/</guid>
+      <description>If you&amp;rsquo;ve ever used bash terminal before, you would have come across the less command at some point.
+For anyone who is not familiar with less, less is a &amp;ldquo;paging&amp;rdquo; command that allows you to view file(s) of interest on your terminal. It is usually the default &amp;ldquo;pager&amp;rdquo; (program used to view a document) for a terminal environment that comes with your Unix/Linux operating system.
+Now, you might ask &amp;ldquo;why bother using less when you can open it up on a text editor, or even better, point and click on the file&amp;rdquo;?</description>
+    </item>
+    
+    <item>
+      <title>Bash history</title>
+      <link>/syskasnippets/2018/02/bash-history/</link>
+      <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/syskasnippets/2018/02/bash-history/</guid>
+      <description>One of the most useful additions to my .bashrc file that I have found is the addition of this command to save all the commands that I run into a log file.
+export PROMPT_COMMAND=&amp;#39;if [ &amp;quot;$(id -u)&amp;quot; -ne 0 ]; then echo &amp;quot;$(date &amp;quot;+%Y-%m-%d.%H:%M:%S&amp;quot;) $(pwd) $(history 1)&amp;quot; &amp;gt;&amp;gt; ~/.logs/bash-history-$(date &amp;quot;+%Y-%m-%d&amp;quot;).log; fi&amp;#39; This is super useful because it saves a new file for each day of all of the timestamped commands that I have run and the directory I was in when I ran them.</description>
+    </item>
+    
+  </channel>
+</rss>
