@@ -20,7 +20,7 @@ tr "\t" "," < tab_separated_file.tsv
 ```
 
 or to work out how many columns I have by taking the first line of a file and converting the delimiters to new lines and then counting the number of lines:
-```{bash}
+```{bash, eval = FALSE}
 echo -e "col1\tcol2\tcol3" > file.tsv
 head -n 1 file.tsv | tr "\t" "\n" | wc -l
 ```
