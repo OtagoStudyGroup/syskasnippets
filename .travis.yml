@@ -17,7 +17,7 @@ r_github_packages:
 
 script:
     - Rscript -e 'blogdown::install_hugo()'
-    - Rscript -e 'blogdown::install_theme("alanorth/hugo-theme-bootstrap4-blog")'
+    - Rscript -e 'blogdown::install_theme("alanorth/hugo-theme-bootstrap4-blog", force = TRUE)'
     - Rscript -e 'blogdown::build_site()'
 
 deploy:
