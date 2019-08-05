@@ -7,9 +7,6 @@ categories:
   - bash
 tags:
   - bash
-description: ''
-images:
-  - /2016/10/image.jpg
 ---
 
 tr or "translate or delete characters" is a super useful program on the command line.
